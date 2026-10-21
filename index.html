@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Viewer</title>
+  <style>
+    :root{--ink:#193043;--muted:#617180;--paper:#fffdf8;--coral:#e46e58;--blue:#267a98;--line:#dce4e5}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#edf5f4,#f8efe2);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.6}
+    main{max-width:900px;margin:0 auto;padding:72px 20px}.eyebrow{color:var(--coral);font-size:.78rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.1;margin:.3rem 0 .8rem}header p{max-width:620px;color:var(--muted);font-size:1.05rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:36px}.card{display:block;padding:22px;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(22,45,55,.08);transition:transform .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(22,45,55,.14)}.card h2{font-size:1.15rem;margin:0 0 5px}.card p{color:var(--muted);font-size:.9rem;margin:0}.arrow{display:block;margin-top:18px;color:var(--blue);font-weight:900}@media(max-width:620px){main{padding:48px 16px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Personal page viewer</div>
+      <h1>내 페이지 모음</h1>
+      <p>여러 HTML 페이지를 한곳에서 열어볼 수 있는 개인용 허브입니다.</p>
+    </header>
+    <section class="grid" aria-label="페이지 목록">
+      <a class="card" href="australia-trip-plan.html">
+        <h2>2027 호주 가족여행 계획</h2>
+        <p>시드니 · 골드코스트 · 브리즈번 여행 일정, 숙소, 투어, 예산</p>
+        <span class="arrow">페이지 열기 →</span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
